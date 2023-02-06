@@ -29,4 +29,12 @@ for d in data:
 	if 'good' in d:
 		good.append(d)
 print('一共有', len(good),'筆留言提到good')
+#good = [d for d in data if 'good' in d]
+#在data裡篩選，若有提到good的則原封不動裝進去good裡
+#good = [1 for d in data if 'good' in d]，意即在data裡篩選，若有提到good的，則用1替代裝進去good裡
+#bad = ['bad' in d for d in data]
+#'bad' in d 中結果會是true或false，故bad裡會裝有一百萬筆資料，並檢查其中若有提到bad其結果為True，沒有提到結果為False
+#bad = []
+#for d in data
+#	bad.append.('bad' in d)
 print(good[0])
